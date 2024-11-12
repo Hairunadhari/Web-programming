@@ -1,0 +1,394 @@
+body{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+
+}
+#home{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+nav .bar{
+    display: none;
+}
+nav{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    background: linear-gradient(to top, #33333311 20%, #33333346);
+    color: #ffffff;
+}
+nav .menus{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    gap: 3rem;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid  rgba(255,255,255,0.25);
+}
+nav img{
+    height: 80px;
+}
+
+nav .menu{
+    display: flex;
+    gap: 2rem;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav .menu a:hover{
+    border-bottom: 1px solid white;
+       transition: 0.3s ; 
+}
+
+header{
+    background-image: url('/assets-landingpage/img/foto-utama-1352x632.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.header-content{
+    text-align: center;
+}
+.header-content p{
+    font-size: 24px;
+}
+.header-content h1{
+    font-size: 44px;
+}
+#content2{
+    width: 100%;
+    background-color: #F8F8FC;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+#content2 .page-heading{
+    border-bottom: 2px solid #D1A358;
+    background-image: url('/assets-landingpage/img/hiasan1.png');
+    background-position: right 5px;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+}
+#content2 .isi{
+    width: 80%;
+}
+#content2 .candi,
+#content2 .atraksi{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+#content2 .candi .gambar1,
+#content2 .candi .gambar2, 
+#content2 .candi .gambar3{
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+}
+#content2 .candi .texts:hover{
+    border: 2px solid white;
+    transform: scale(0.9);
+    transition: all 0.1s linear;
+}
+#content2 .candi .gambar1{
+    background-image: url('/assets-landingpage/img/gambar1.jpg');
+}
+#content2 .candi .gambar2{
+    background-image: url('/assets-landingpage/img/gambar2.jpg');
+}
+#content2 .candi .gambar3{
+    background-image: url('/assets-landingpage/img/gambar3.jpg');
+}
+
+#content2 .candi .texts{
+    
+    height: 100%;
+}
+#content2 .candi .text{
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#content2 .candi p{
+    letter-spacing: 2px;
+}
+#content2 .atraksi .gambar1,
+#content2 .atraksi .gambar2,
+#content2 .atraksi  .gambar3{
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+}
+#content2 .atraksi .gambar1{
+    background-image: url('/assets-landingpage/img/atraksi1.jpg');
+}
+#content2 .atraksi .gambar2{
+    background-image: url('/assets-landingpage/img/atraksi2.jpg');
+}
+#content2 .atraksi .gambar3{
+    background-image: url('/assets-landingpage/img/atraksi3.jpg');
+}
+#content2 .atraksi .text{
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    background-color: rgba(15, 15, 15, 0.219);
+    border-top: 1px solid rgba(255,255,255,0.25);
+}
+#content2 .atraksi .texts:hover{
+    transform: translateY(-30px);
+    transition: 0.3s;
+}
+#content2 .atraksi .texts{
+    
+    height: 100%;
+}
+#content2 .atraksi p{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#artikel{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 100px;
+    background-color: #ffffff;
+}
+#artikel .hiasan{
+    border-top: 2px solid #D1A358;
+    background-image: url('/assets-landingpage/img/hiasan2.png');
+    background-position: left 1px;
+    background-repeat: no-repeat;
+    height: 80px;
+}
+#artikel .isian{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+#artikel .isi{
+    display: flex;
+    justify-content: center;
+}
+#artikel .item{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 30px;
+}
+#artikel .text{
+    width: 500px;
+}
+#artikel img{
+    height: 180px;
+}
+#artikel h1{
+    font-weight: 600;
+}
+#artikel h3{
+    font-size: 31px;
+}
+#artikel span{
+    color: #B4B4BD;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+#artikel .content{
+    padding-top: 30px;
+}
+#artikel .detail{
+    border-top: 1px solid rgba(15, 15, 15, 0.219);
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+#artikel .selengkapnya{
+    background-color: #D1A358;
+    padding: 10px 20px 10px 20px;
+    border-radius: 3px;
+    font-weight: 300;
+}
+#artikel a{
+    text-decoration: none;
+    color: #fff;
+
+}
+#galeri .baris1,
+#galeri .baris2,
+#galeri .baris3{
+    display: flex;
+}
+#galeri .baris1 img{
+    width: 550px;
+    height: 250px;
+    border: 1px solid white;
+}
+#galeri .baris2 img{
+    width: 550px;
+    height: 250px;
+    border: 1px solid white;
+}
+#galeri .baris3 img{
+    width: 550px;
+    height: 250px;
+    border: 1px solid white;
+}
+#galeri img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+
+}
+footer .items{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    align-items: center;
+    
+}
+footer{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-top: 1px solid rgba(15, 15, 15, 0.219);
+    border-bottom: 1px solid rgba(15, 15, 15, 0.219);
+
+    padding: 4rem;
+}
+footer a{
+    text-decoration: none;
+    color: #333333;
+}
+.copyright{
+    text-align: center;
+    color: #B4B4BD;
+}
+.sosmed a{
+    color: #9898a0;
+    font-size: 20px;
+}
+.sosmed{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 50px;
+}
+
+
+@media (max-width: 800px) {
+    nav img {
+        height: 50px;
+    }
+    nav {
+        padding-top: 5px;
+    }
+    nav .menu {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        background-color: #33333346; /* Sesuaikan dengan kebutuhan */
+        position: absolute;
+        top: 60px; /* Sesuaikan dengan kebutuhan */
+        right: 0;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+    nav .bar {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    nav .menus {
+        width: 100%;
+        display: flex;
+        gap: 5rem;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    }
+    nav .menu.show {
+        max-height: 500px; /* Sesuaikan dengan tinggi menu */
+    }
+
+    header{
+        width: 100%;
+        height: 50vh;
+    }
+
+    .header-content p{
+        font-size: 16px;
+    }
+    .header-content h1{
+        font-size: 24px;
+    }
+
+    #content2 .candi,
+    #content2 .atraksi{
+        display: block;
+    }
+
+    #content2 .candi .gambar1,
+    #content2 .candi .gambar2, 
+    #content2 .candi .gambar3{
+        margin-bottom: 1rem;
+        height: 300px;
+        background-position: center;
+    }
+    
+    #content2 .atraksi .gambar1,
+    #content2 .atraksi .gambar2,
+    #content2 .atraksi  .gambar3{
+        height: 250px;
+        margin-bottom: 1rem;
+    }
+
+    #artikel .isian{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    #artikel .item{
+        display: block;
+        padding: 1rem;
+    }
+    #artikel .text{
+        width: 100%;
+    }
+    #galeri .baris1,
+    #galeri .baris2,
+    #galeri .baris3{
+        display: block;
+    }
+
+    #galeri img{
+        width: 100% !important;
+    }
+
+    footer .items{
+        display: block;
+        text-align: center;
+    }
+    
+}
