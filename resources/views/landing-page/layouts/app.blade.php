@@ -46,11 +46,11 @@
             </div>
             <div class="candi" style="margin-bottom: 50px;">
                 <div class="gambar1">
-                    
+
                 </div>
                 <div class="gambar2">
                     <div class="texts">
-    
+
                         <div class="text">
                             <h2>Prambanan</h2>
                             <p>Social Prambanan</p>
@@ -59,7 +59,7 @@
                 </div>
                 <div class="gambar3">
                     <div class="texts">
-    
+
                         <div class="text">
                             <h2>Ratu Boko</h2>
                             <p>Natural Ratu Boko</p>
@@ -81,7 +81,7 @@
                 </div>
                 <div class="gambar2">
                     <div class="texts">
-    
+
                         <div class="text">
                             <p>Sewu Temple Samadhi</p>
                         </div>
@@ -89,7 +89,7 @@
                 </div>
                 <div class="gambar3">
                     <div class="texts">
-    
+
                         <div class="text">
                             <p>Paket Wisata Borobu</p>
                         </div>
@@ -115,7 +115,7 @@
                                 <span>BERITA</span>
                                 <div class="selengkapnya">
                                     <a href="detail-artikel1.html">
-    
+
                                         Selengkapnya
                                     </a>
                                 </div>
@@ -123,7 +123,7 @@
                         </div>
                     </div>
                     <div class="item">
-    
+
                         <img src={{asset('assets-landingpage/img/artikel2.jpg')}} alt="">
                         <div class="text">
                             <h1>Jogja Heritage Escape</h1>
@@ -132,7 +132,7 @@
                                 <span>PROMO</span>
                                 <div class="selengkapnya">
                                     <a href="detail-artikel2.html">
-    
+
                                         Selengkapnya
                                     </a>
                                 </div>
@@ -140,7 +140,7 @@
                         </div>
                     </div>
                     <div class="item">
-    
+
                         <img src={{asset('assets-landingpage/img/artikel3.jpg')}} alt="">
                         <div class="text">
                             <h1>Jam Khusu Operasional 17 Juni 2022</h1>
@@ -149,7 +149,7 @@
                                 <span>BERITA</span>
                                 <div class="selengkapnya">
                                     <a href="detail-artikel3.html">
-    
+
                                         Selengkapnya
                                     </a>
                                 </div>
@@ -158,7 +158,7 @@
                     </div>
                 </div>
             </div>
-    
+
         </div>
     </section>
 
@@ -183,7 +183,7 @@
     <footer>
         <div class="content">
             <div class="items">
-    
+
                 <div class="item1">
                     <p>Call Center (Mon-Sun, 6.00 am – 6.00 pm): +62811 2688 000</p>
                     <p>Email: webpro@webpro.co.id</p>
@@ -192,74 +192,74 @@
                 <div class="item2">
                     <h4>Candi</h4>
                     <p>
-    
+
                         <a href="">Borobudur</a>
                     </p>
                     <p>
-    
+
                         <a href="">Prambanan</a>
                     </p>
                     <p>
-    
+
                         <a href="">Ratu Boko</a>
                     </p>
-    
+
                 </div>
                 <div class="item3">
                     <h4>Informasi</h4>
                     <p>
-    
+
                         <a href="">Lembar Fakta</a>
                     </p>
                     <p>
-    
+
                         <a href="">Brosur</a>
                     </p>
                     <p>
-    
+
                         <a href="">Aktrasi</a>
                     </p>
-    
+
                 </div>
                 <div class="item4">
                     <h4>Taman Wisata Candi</h4>
                     <p>
-    
+
                         <a href="">Website Wisata</a>
                     </p>
                     <p>
-    
+
                         <a href="">Kontak</a>
                     </p>
                     <p>
-    
+
                         <a href="">Tentang Kami</a>
                     </p>
-    
+
                 </div>
             </div>
         </div>
         <div class="sosmed">
             <a href="#">
-    
+
                 <i class="fa-brands fa-twitter"></i>
             </a>
             <a href="#">
-    
+
                 <i class="fa-brands fa-facebook-f"></i>
             </a>
             <a href="#">
-    
+
                 <i class="fa-brands fa-instagram"></i>
             </a>
             <a href="#">
-    
+
                 <i class="fa-brands fa-youtube"></i>
             </a>
         </div>
     </footer>
     <div class="copyright">
-        <p>© Copyright Kelompok 4</p>
+        <p>© Copyrigh</p>
     </div>
 </body>
 <script>
