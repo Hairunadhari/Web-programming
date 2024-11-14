@@ -26,8 +26,8 @@
         </li>
         <li><a class="nav-link" href="blank.html"><i class="far fa-square"></i> <span>Blank Page</span></a></li>
         <li><a class="nav-link" href="/admin/destinations"><i class="far fa-square"></i> <span>Destinations</span></a></li>
-        <li><a class="nav-link" href="blank.html"><i class="far fa-square"></i> <span>Transactions</span></a></li>
-        <li><a class="nav-link" href="blank.html"><i class="far fa-square"></i> <span>Users</span></a></li>
+        <li><a class="nav-link" href="/admin/transactions"><i class="far fa-square"></i> <span>Transactions</span></a></li>
+        <li><a class="nav-link" href="/admin/users"><i class="far fa-square"></i> <span>Users</span></a></li>
         <li class="dropdown">
           <a href="#" class="nav-link has-dropdown"><i class="fas fa-th"></i> <span>Bootstrap</span></a>
           <ul class="dropdown-menu">
