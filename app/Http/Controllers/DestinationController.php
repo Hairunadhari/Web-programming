@@ -89,4 +89,39 @@ class DestinationController extends Controller
         $data->delete();
         return redirect('/admin/destinations')->with('success', 'data dah di hapuss');
     }
+
+    public function index_user(Request $request){
+        $query = Destination::query();
+
+        if ($request->budget == 'high-to-low') {
+            $query->orderBy('harga', 'desc');
+        }
+        if ($request->budget == 'low-to-high') {
+            $query->orderBy('harga', 'asc');
+        }
+        if ($request->date) {
+            $query->whereDate('created_at', $request->date);
+        }
+        $data = $query->get();
+        return view('landing-page.destinations', compact('data'));
+    }
+
+    public function search(Request $request){
+        $query = Destination::query();
+
+        if ($request->budget == 'high-to-low') {
+            $query->orderBy('harga', 'desc');
+        }
+        if ($request->budget == 'low-to-high') {
+            $query->orderBy('harga', 'asc');
+        }
+        if ($request->date) {
+            $query->whereDate('created_at', $request->date);
+        }
+        $data = $query->get();
+        return view('landing-page.destinations', compact('data'));
+
+    }
+
+
 }

@@ -22,6 +22,9 @@ use App\Http\Controllers\TransactionController;
 //     return view('welcome');
 // });
 Route::get('/', [HomeController::class, 'index']);
+Route::get('/destinations', [DestinationController::class, 'index_user']);
+// Route::post('/destinations/search', [DestinationController::class, 'search']);
+
 Route::prefix('admin')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'dashboard']);
     Route::get('/destinations', [DestinationController::class, 'index']);

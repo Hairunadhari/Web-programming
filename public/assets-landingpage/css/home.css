@@ -1,0 +1,330 @@
+#home{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-content .search{
+    display: flex;
+    gap: 2rem;
+    padding: 10px 30px 10px 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.15); /* Transparent effect */
+  backdrop-filter: blur(10px); /* Blurred background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  max-width: max-content;
+  margin: auto;
+  margin-top: 30px;
+}
+.header-content select{
+    font-size: 16px;
+    padding: 5px 20px 5px 20px;
+    background: none;
+    border: none;
+    color: white;
+}
+.header-content .item{
+    border-right: 1px solid white;
+    padding-right: 20px;
+}
+.header-content button{
+    padding: 10px 30px 10px 30px;
+    border-radius: 20px;
+    background-color: white;
+    border: none;
+}
+
+
+header{
+    background-image: url('/assets-landingpage/img/foto-utama-1352x632.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.header-content{
+    text-align: center;
+}
+.header-content p{
+    font-size: 24px;
+    margin: 10px;
+}
+.header-content h1{
+    font-size: 64px;
+    margin: 0px;
+}
+#content2{
+    width: 100%;
+    background-color: #F8F8FC;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+#tourpackages .isi{
+    width: 80%;
+}
+#tourpackages{
+    width: 100%;
+    background-color: #F8F8FC;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+#content2 .page-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+#tourpackages .page-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+#tourpackages .page-heading p{
+    width: 500px;
+    color: #B4B4BD;
+line-height: 30px;
+}
+#content2 .page-heading p{
+    width: 500px;
+    color: #B4B4BD;
+line-height: 30px;
+}
+#content2 .isi{
+    width: 80%;
+}
+#content2 .candi .con{
+    display: flex;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+#tourpackages .atraksi{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+#content2 .candi .gambar1,
+#content2 .candi .gambar2, 
+#content2 .candi .gambar3, 
+#content2 .candi .gambar4{
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    border-radius: 20px;
+}
+#content2 .candi .texts:hover{
+    border: 2px solid white;
+    transform: scale(0.9);
+    transition: all 0.1s linear;
+}
+#content2 .candi .gambar1{
+    background-image: url('/assets-landingpage/img/gambar1.jpg');
+}
+#content2 .candi .gambar2{
+    background-image: url('/assets-landingpage/img/gambar2.jpg');
+    width: 600px;
+}
+#content2 .candi .gambar3{
+    width: 600px;
+    background-image: url('/assets-landingpage/img/gambar3.jpg');
+}
+#content2 .candi .gambar4{
+    background-image: url('/assets-landingpage/img/gambar3.jpg');
+}
+
+#howitworks .gambar1{
+    background-image: url('/assets-landingpage/img/gambar3.jpg');
+    height: 600px;
+    width: 500px;
+    background-size: cover;
+    position: relative;
+    border-radius: 20px;
+}
+#howitworks{
+    width: 100%;
+    background-color: #F8F8FC;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+
+}
+#howitworks .isi{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#content2 .candi .texts{
+    
+    height: 100%;
+}
+#content2 .candi .text{
+    color: #ffffff;
+    padding-left: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#content2 .candi p{
+    letter-spacing: 2px;
+}
+#tourpackages .atraksi .gambar1,
+#tourpackages .atraksi .gambar2,
+#tourpackages .atraksi  .gambar3{
+    height: 450px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    border-radius: 20px;
+}
+#tourpackages .atraksi .gambar1{
+    background-image: url('/assets-landingpage/img/atraksi1.jpg');
+}
+#tourpackages .atraksi .gambar2{
+    background-image: url('/assets-landingpage/img/atraksi2.jpg');
+}
+#tourpackages .atraksi .gambar3{
+    background-image: url('/assets-landingpage/img/atraksi3.jpg');
+}
+#tourpackages .atraksi .text{
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    bottom: 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    border-top: 1px solid rgba(255,255,255,0.25);
+    background: rgba(255, 255, 255, 0.15); 
+    backdrop-filter: blur(10px); /* Blurred background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#tourpackages .atraksi .texts{
+    height: 100%;
+}
+#tourpackages .atraksi p{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#artikel{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 100px;
+    background-color: #ffffff;
+}
+#artikel .hiasan{
+    border-top: 2px solid #D1A358;
+    background-image: url('/assets-landingpage/img/hiasan2.png');
+    background-position: left 1px;
+    background-repeat: no-repeat;
+    height: 80px;
+}
+#artikel .isian{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+#artikel .isi{
+    display: flex;
+    justify-content: center;
+}
+#artikel .item{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 30px;
+}
+#artikel .text{
+    width: 500px;
+}
+#artikel img{
+    height: 180px;
+}
+#artikel h1{
+    font-weight: 600;
+}
+#artikel h3{
+    font-size: 31px;
+}
+#artikel span{
+    color: #B4B4BD;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+#artikel .content{
+    padding-top: 30px;
+}
+#artikel .detail{
+    border-top: 1px solid rgba(15, 15, 15, 0.219);
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+#artikel .selengkapnya{
+    background-color: #D1A358;
+    padding: 10px 20px 10px 20px;
+    border-radius: 3px;
+    font-weight: 300;
+}
+#artikel a{
+    text-decoration: none;
+    color: #fff;
+
+}
+#galeri .baris1,
+#galeri .baris2,
+#galeri .baris3{
+    display: flex;
+}
+#galeri .baris1 img{
+    width: 550px;
+    height: 250px;
+    border: 1px solid white;
+}
+#galeri .baris2 img{
+    width: 550px;
+    height: 250px;
+    border: 1px solid white;
+}
+#galeri .baris3 img{
+    width: 550px;
+    height: 250px;
+    border: 1px solid white;
+}
+#galeri img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+
+}
+
+.copyright{
+    text-align: center;
+    color: #B4B4BD;
+}
+.sosmed a{
+    color: #9898a0;
+    font-size: 20px;
+}
+.sosmed{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 50px;
+}
