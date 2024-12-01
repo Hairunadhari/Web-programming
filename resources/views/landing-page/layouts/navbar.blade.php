@@ -86,7 +86,7 @@ nav .menu a:hover{
 
 
 header{
-    background-image: url('/assets-landingpage/img/foto-utama-1352x632.jpg');
+    background-image: url('/assets-landingpage/img/1.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -139,11 +139,11 @@ option{
                 </a>
             </h2>
             <div class="menu">
-                <a href="/" class="list">Home</a>
-                <a href="/" class="list">Services</a>
-                <a href="/" class="list">Tour</a>
-                <a href="/" class="list">About</a>
-                <a href="/" class="list">Contact</a>
+                <a href="/#" class="list">Home</a>
+                <a href="/#" class="list">Services</a>
+                <a href="/#" class="list">Tour</a>
+                <a href="/#" class="list">About</a>
+                <a href="/#" class="list">Contact</a>
                 <a href="/destinations" class="list">Destinations</a>
             </div>
             <div class="sign">

@@ -65,7 +65,7 @@
         <div class="gambar1">
             <div class="texts">
                 <div class="text">
-                    <p>Sewu Temple Samadhi</p>
+                    {{-- <p>Sewu Temple Samadhi</p> --}}
                 </div>
             </div>
         </div>
@@ -176,7 +176,7 @@
         <h1 class="text-center mb-5">Our travel memories</h1>
         <div class="d-flex justify-content-center gap-3">
             <div class="card" style="width: 50%; height: 600px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
-                <img src="{{asset('assets-landingpage/img/atraksi3.jpg')}}" class="card-img-top h-50" alt="...">
+                <img src="{{asset('assets-landingpage/img/7.jpg')}}" class="card-img-top h-50" alt="...">
                 <div class="card-body">
                     <h5 class="card-title" style="color: #B4B4BD">Nov 14, 2024</h5>
                     <h3 class="card-title">2024 Travel Trends - what you need to know</h3>
@@ -187,7 +187,7 @@
                 </div>
             </div>
             <div class="card" style="width: 50%; height: 600px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
-                <img src="{{asset('assets-landingpage/img/atraksi3.jpg')}}" class="card-img-top h-50" alt="...">
+                <img src="{{asset('assets-landingpage/img/8.jpg')}}" class="card-img-top h-50" alt="...">
                 <div class="card-body">
                     <h5 class="card-title" style="color: #B4B4BD">Nov 14, 2024</h5>
                     <h3 class="card-title">2024 Travel Trends - what you need to know</h3>

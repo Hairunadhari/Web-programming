@@ -38,7 +38,7 @@
 
 
 header{
-    background-image: url('/assets-landingpage/img/foto-utama-1352x632.jpg');
+    background-image: url('/assets-landingpage/img/1.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -130,22 +130,22 @@ line-height: 30px;
     transition: all 0.1s linear;
 }
 #content2 .candi .gambar1{
-    background-image: url('/assets-landingpage/img/gambar1.jpg');
+    background-image: url('/assets-landingpage/img/3.jpg');
 }
 #content2 .candi .gambar2{
-    background-image: url('/assets-landingpage/img/gambar2.jpg');
+    background-image: url('/assets-landingpage/img/4.jpg');
     width: 600px;
 }
 #content2 .candi .gambar3{
     width: 600px;
-    background-image: url('/assets-landingpage/img/gambar3.jpg');
+    background-image: url('/assets-landingpage/img/5.jpg');
 }
 #content2 .candi .gambar4{
-    background-image: url('/assets-landingpage/img/gambar3.jpg');
+    background-image: url('/assets-landingpage/img/1.jpg');
 }
 
 #howitworks .gambar1{
-    background-image: url('/assets-landingpage/img/gambar3.jpg');
+    background-image: url('/assets-landingpage/img/1.jpg');
     height: 600px;
     width: 500px;
     background-size: cover;
@@ -192,13 +192,13 @@ line-height: 30px;
     border-radius: 20px;
 }
 #tourpackages .atraksi .gambar1{
-    background-image: url('/assets-landingpage/img/atraksi1.jpg');
+    background-image: url('/assets-landingpage/img/2.jpg');
 }
 #tourpackages .atraksi .gambar2{
-    background-image: url('/assets-landingpage/img/atraksi2.jpg');
+    background-image: url('/assets-landingpage/img/6.jpg');
 }
 #tourpackages .atraksi .gambar3{
-    background-image: url('/assets-landingpage/img/atraksi3.jpg');
+    background-image: url('/assets-landingpage/img/5.jpg');
 }
 #tourpackages .atraksi .text{
     text-align: center;
@@ -231,7 +231,7 @@ line-height: 30px;
 }
 #artikel .hiasan{
     border-top: 2px solid #D1A358;
-    background-image: url('/assets-landingpage/img/hiasan2.png');
+    background-image: url('/assets-landingpage/img/1.jpg');
     background-position: left 1px;
     background-repeat: no-repeat;
     height: 80px;
