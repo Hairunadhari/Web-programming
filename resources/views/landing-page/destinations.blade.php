@@ -31,11 +31,15 @@
         width: max-content;
         padding: 10px;
         color: white;
-        border-radius: 20px
+        border-radius: 20px;
     }
 </style>
 
 <div class=" p-5" id="destinations">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item">Destination</li>
+      </ol>
     <h3 class="mb-3">Destinations</h3>
 
     @foreach ($data as $item)
@@ -56,35 +60,9 @@
                     <div class="price">
                       <p class="card-text"><i class="fa-solid fa-tag"></i> Rp {{ number_format($item->harga, 0, ',', '.') }} <small>/pax</small> </p>
                     </div>
+                    <a href="/booking" class="btn w-100 text-white mt-3 fw-bold" style="background-color: #01AAA7; border-radius: 20px">Book Now</a>
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title">Choose Date</h5>
-                    <form>
-                        <div class="row">
-                            <div class="col-4">
-                                <label class="form-label">From</label>
-                                <input type="date" name="from_date" required class="form-control">
-                            </div>
-                            <div class="col-4">
-                                <label class="form-label">To</label>
-                                <input type="date" name="to_date" required class="form-control">
-                            </div>
-                            <div class="col-4">
-                                <label for="">Number of pax</label>
-                                <div class="d-flex gap-3 mt-2">
-                                    <div class="icon" id="min" onclick="min()">
-                                        <i class="fa-solid fa-minus"></i>
-                                    </div>
-                                    <input type="text"  name="qty" id="qty" readonly value="1" style="color: black; width: 20px;">
-                                    <div class="icon" id="plus" onclick="plus()">                                        
-                                        <i class="fa-solid fa-plus"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button type="submit" class="btn text-white mt-3 fw-bold" style="background-color: #01AAA7; border-radius: 20px">Book Now</button>
-                    </form>
-                </div>
+             
             </div>
         </div>
         

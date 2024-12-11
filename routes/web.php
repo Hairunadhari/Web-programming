@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\DashboardController;
@@ -22,6 +23,9 @@ use App\Http\Controllers\TransactionController;
 //     return view('welcome');
 // });
 Route::get('/', [HomeController::class, 'index']);
+Route::get('/register', [AuthController::class, 'register']);
+Route::get('/login', [AuthController::class, 'login']);
+Route::get('/booking', [DestinationController::class, 'booking']);
 Route::get('/destinations', [DestinationController::class, 'index_user']);
 // Route::post('/destinations/search', [DestinationController::class, 'search']);
 

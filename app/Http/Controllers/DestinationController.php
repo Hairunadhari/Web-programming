@@ -123,5 +123,9 @@ class DestinationController extends Controller
 
     }
 
+    public function booking(){
+        return view('landing-page.booking');
+    }
+
 
 }

@@ -108,7 +108,7 @@ header{
     font-size: 64px;
     margin: 0px;
 }
-input[type="date"]::-webkit-calendar-picker-indicator {
+header input[type="date"]::-webkit-calendar-picker-indicator {
     position: absolute;
     top: 0;
     left: 0;
@@ -119,7 +119,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     color: none;
     background: none;
 }
-input{
+header input{
     background: none;
     border: none;
     color: white;
@@ -146,9 +146,9 @@ option{
                 <a href="/#" class="list">Contact</a>
                 <a href="/destinations" class="list">Destinations</a>
             </div>
-            <div class="sign">
+            <a class="sign" href="/login">
                 Login
-            </div>
+            </a>
             <div class="bar" id="bar">
                 <i class="fa-solid fa-bars"></i>
             </div>
