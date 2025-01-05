@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DestinationController;
 use App\Http\Controllers\TransactionController;
@@ -27,6 +28,8 @@ Route::get('/register', [AuthController::class, 'register']);
 Route::get('/login', [AuthController::class, 'login']);
 Route::get('/booking', [DestinationController::class, 'booking']);
 Route::get('/destinations', [DestinationController::class, 'index_user']);
+Route::get('/checkout', [CheckoutController::class, 'index']);
+Route::get('/checkout-sukses', [CheckoutController::class, 'sukses']);
 // Route::post('/destinations/search', [DestinationController::class, 'search']);
 
 Route::prefix('admin')->group(function () {

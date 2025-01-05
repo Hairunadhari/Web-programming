@@ -30,22 +30,18 @@
                 <form >
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">Name</label>
-                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name">
                     </div>
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">Email</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email">
                     </div>
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">No Telp</label>
-                      <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="No telp">
                     </div>
                     <div class="mb-3">
-                      <label  class="form-label">From</label>
-                      <input type="date" class="form-control" >
-                    </div>
-                    <div class="mb-3">
-                      <label  class="form-label">To</label>
+                      <label  class="form-label">Date</label>
                       <input type="date" class="form-control" >
                     </div>
                     <div class="mb-3">
@@ -54,18 +50,14 @@
                             <div class="icon" id="min" onclick="min()">
                                 <i class="fa-solid fa-minus"></i>
                             </div>
-                            <input type="text"   name="qty" id="qty" readonly value="1" style="color: black; width: 20px;">
+                            <input type="text"   name="qty" id="qty" readonly value="1" style="color: black; border:none; width: 20px;">
                             <div class="icon" id="plus" onclick="plus()">                                        
                                 <i class="fa-solid fa-plus"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Total Harga</label>
-                      <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </div>
                     <div class="text-center">
-                        <a href="/" style="padding-inline: 40px" class="btn btn-primary">Save</a>
+                        <a href="/checkout" style="padding-inline: 40px" class="btn btn-primary">Booking</a>
                     </div>
                   </form>
                 </div>
