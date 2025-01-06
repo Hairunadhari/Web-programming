@@ -1,7 +1,7 @@
 @extends('admin-page.layouts.app')
 @section('content')
 <div class="section-header">
-    <h1 style="width:87%">Edit Kategori</h1>
+    <h1 style="width:87%">Edit Destinasi</h1>
 </div>
 <div class="section-body">
 

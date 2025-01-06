@@ -41,6 +41,8 @@ Route::prefix('admin')->group(function () {
     Route::delete('/destinations/delete/{id}', [DestinationController::class, 'delete']);
     
     Route::get('/transactions', [TransactionController::class, 'index']);
+    Route::get('/transactions/detail', [TransactionController::class, 'detail']);
     Route::get('/users', [UserController::class, 'index']);
+    Route::get('/users/detail', [UserController::class, 'detail']);
 
 });

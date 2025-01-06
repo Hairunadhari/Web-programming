@@ -10,11 +10,8 @@ use Illuminate\Support\Facades\Validator;
 class DestinationController extends Controller
 {
     public function index(){
-        if (request()->ajax()) {
-            $data = Destination::all();
-            return DataTables::of($data)->make(true);
-        }
-        return view('admin-page.destinations.destination');
+            $datas = Destination::all();
+        return view('admin-page.destinations.destination',compact('datas'));
     }
 
     public function submit(Request $request){
@@ -42,7 +39,7 @@ class DestinationController extends Controller
             'no_telp_outlet' => $request->no_telp_outlet
         ]);
 
-        return redirect('/admin/destinations')->with('success', 'data dah masukk');
+        return redirect('/admin/destinations')->with('success', 'Data Berhasil Dibuat.');
     }
 
     public function edit($id){
@@ -81,13 +78,13 @@ class DestinationController extends Controller
 
         $destinasi->update($data);
 
-        return redirect('/admin/destinations')->with('success', 'data dah di update');
+        return redirect('/admin/destinations')->with('success', 'Data Berhasil Diupdate.');
     }
     
     public function delete($id){
         $data = Destination::find($id);
         $data->delete();
-        return redirect('/admin/destinations')->with('success', 'data dah di hapuss');
+        return redirect('/admin/destinations')->with('success', 'Data Berhasil Dihapus.');
     }
 
     public function index_user(Request $request){
