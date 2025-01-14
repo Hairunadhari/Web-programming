@@ -6,14 +6,14 @@
                 <div class="card card-statistic-2">
                    
                     <div class="card-icon shadow-primary bg-primary">
-                        <i class="fas fa-archive"></i>
+                        <i class="fas fa-mountain"></i>
                     </div>
                     <div class="card-wrap">
                         <div class="card-header">
                             <h4>Destination</h4>
                         </div>
                         <div class="card-body">
-                            5
+                            {{$dest}}
                         </div>
                     </div>
                 </div>
@@ -22,14 +22,14 @@
                 <div class="card card-statistic-2">
                    
                     <div class="card-icon shadow-primary bg-primary">
-                        <i class="fas fa-dollar-sign"></i>
+                        <i class="fas fa-credit-card"></i>
                     </div>
                     <div class="card-wrap">
                         <div class="card-header">
                             <h4>Transactions</h4>
                         </div>
                         <div class="card-body">
-                            5
+                            {{$trans}}
                         </div>
                     </div>
                 </div>
@@ -38,14 +38,14 @@
                 <div class="card card-statistic-2">
                     
                     <div class="card-icon shadow-primary bg-primary">
-                        <i class="fas fa-user"></i>
+                        <i class="fas fa-users"></i>
                     </div>
                     <div class="card-wrap">
                         <div class="card-header">
                             <h4>Users</h4>
                         </div>
                         <div class="card-body">
-                            5
+                            {{$user}}
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4>Invoices</h4>
+                        <h4>Transaction</h4>
                         <div class="card-header-action">
                             <a href="/admin/transactions" class="btn btn-danger">View More <i class="fas fa-chevron-right"></i></a>
                         </div>
@@ -65,67 +65,23 @@
                         <div class="table-responsive table-invoice">
                             <table class="table table-striped">
                                 <tr>
-                                    <th>Invoice ID</th>
+                                    <th>No</th>
                                     <th>Customer</th>
                                     <th>Status</th>
-                                    <th>Due Date</th>
-                                    <th>Action</th>
+                                    <th>Tanggal Keberangkatan</th>
                                 </tr>
+                                @forelse ($data as $item)
+                                    <tr>
+                                        <td>{{ $data->firstItem() + $loop->index }}</td>
+                                        <td>{{$item->nama_pemesan}}</td>
+                                        <td><span class="badge badge-success">{{$item->status_pembayaran}}</span></td>
+                                        <td>{{ date('d F Y', strtotime($item->tanggal_keberangkatan)) }}</td>
+                                    </tr>
+                                @empty
                                 <tr>
-                                    <td><a href="#">INV-87239</a></td>
-                                    <td class="font-weight-600">Kusnadi</td>
-                                    <td>
-                                        <div class="badge badge-warning">Pending</div>
-                                    </td>
-                                    <td>July 19, 2018</td>
-                                    <td>
-                                        <a href="#" class="btn btn-primary">Detail</a>
-                                    </td>
+                                    <td colspan="5" class="align-items-center text-center text-nowrap">Data Kosong</td>
                                 </tr>
-                                <tr>
-                                    <td><a href="#">INV-48574</a></td>
-                                    <td class="font-weight-600">Hasan Basri</td>
-                                    <td>
-                                        <div class="badge badge-success">Paid</div>
-                                    </td>
-                                    <td>July 21, 2018</td>
-                                    <td>
-                                        <a href="#" class="btn btn-primary">Detail</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="#">INV-76824</a></td>
-                                    <td class="font-weight-600">Muhamad Nuruzzaki</td>
-                                    <td>
-                                        <div class="badge badge-warning">Pending</div>
-                                    </td>
-                                    <td>July 22, 2018</td>
-                                    <td>
-                                        <a href="#" class="btn btn-primary">Detail</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="#">INV-84990</a></td>
-                                    <td class="font-weight-600">Agung Ardiansyah</td>
-                                    <td>
-                                        <div class="badge badge-warning">Pending</div>
-                                    </td>
-                                    <td>July 22, 2018</td>
-                                    <td>
-                                        <a href="#" class="btn btn-primary">Detail</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="#">INV-87320</a></td>
-                                    <td class="font-weight-600">Ardian Rahardiansyah</td>
-                                    <td>
-                                        <div class="badge badge-success">Paid</div>
-                                    </td>
-                                    <td>July 28, 2018</td>
-                                    <td>
-                                        <a href="#" class="btn btn-primary">Detail</a>
-                                    </td>
-                                </tr>
+                                @endforelse
                             </table>
                         </div>
                     </div>

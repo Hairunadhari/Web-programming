@@ -19,45 +19,47 @@
 
     <div class="mb-3">
         <div class="row d-flex justify-content-center">
-           <img style="height: 500px;  border-radius: 1rem" src="{{asset('assets-landingpage/img/5.jpg')}}" alt="">
+           <img style="height: 500px;  border-radius: 1rem"  src="{{ Storage::url('image/' . $data->image) }}" alt="">
         </div>
         <div class="row pt-4">
             <div class="col-8">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, molestiae doloremque in iure dolorum porro corporis voluptatum officia ratione. Quo impedit cumque veritatis nostrum, qui voluptas ipsam harum, modi necessitatibus hic aspernatur reiciendis doloremque laborum quaerat. Necessitatibus architecto tempora id, sapiente nihil reprehenderit sit voluptas natus corporis repudiandae repellat obcaecati. Pariatur numquam perferendis sapiente maiores fugiat voluptatem et voluptate nam sint harum culpa, aliquid doloremque tempore corporis aspernatur fuga nemo eius deserunt minima quos. Animi reiciendis fugit sit nesciunt cumque enim provident quas repudiandae iusto amet eligendi ex repellat iste reprehenderit placeat exercitationem, obcaecati vero deleniti atque, rem magnam cupiditate odio rerum? Inventore illo in aperiam dolorem, repellat hic error repellendus laborum, vel soluta maxime quaerat, totam veniam reiciendis accusantium ullam odio doloremque. Impedit quam nisi iure recusandae nulla distinctio alias eum autem magnam. Placeat dolorem amet aperiam nesciunt temporibus. Magnam quis odit facere debitis recusandae provident ad consectetur officia ipsam, soluta eius incidunt tempore beatae blanditiis cumque distinctio ipsum quisquam, fugit neque quas voluptas possimus facilis fuga necessitatibus. Aliquid harum consequuntur at maxime enim ab doloremque delectus, asperiores possimus distinctio architecto ipsa labore inventore ex, pariatur fuga odio natus amet optio aspernatur voluptas sequi laboriosam assumenda! Quisquam ea reprehenderit maiores id, enim, recusandae a quos praesentium dignissimos nemo deserunt quam veritatis quibusdam possimus laudantium vel fugit ducimus! Velit sint optio culpa ducimus fugiat expedita, asperiores doloremque repellat provident consectetur dolores est sunt similique aliquam, animi dolorem ipsa odio illo perferendis illum suscipit quod facilis. Laboriosam esse magnam eaque, numquam nostrum quia dicta fuga ex inventore doloribus molestiae vitae ipsum fugit libero, praesentium hic incidunt aliquam impedit. Nemo fugiat iusto, laudantium ad, dolorum nobis quae ipsa consectetur quibusdam ut molestiae iure porro. Inventore delectus reprehenderit assumenda soluta repellendus earum vitae laboriosam, nostrum natus iusto quia voluptatum fugit molestias possimus deserunt!
+                {{$data->description}}
             </div>
             <div class="col-4">
                 <div class="p-3" style="border: 2px solid rgb(0, 108, 228); border-radius: 10px">
-                <form >
+                <form action="/checkout" method="POST" enctype="multipart/form-data">
+                    @csrf
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">Name</label>
-                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name">
+                      <input type="text" name="name" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name">
                     </div>
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">Email</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email">
+                      <input type="email" name="email" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email">
                     </div>
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">No Telp</label>
-                      <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="No telp">
+                      <input type="number" name="no_telp" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="No telp">
+                      <input type="hidden" name="id" value="{{$data->id}}" class="form-control" >
                     </div>
                     <div class="mb-3">
                       <label  class="form-label">Date</label>
-                      <input type="date" class="form-control" >
+                      <input type="date" name="date" required class="form-control" >
                     </div>
                     <div class="mb-3">
-                        <label for="">Number of pax</label>
+                        <label for="">Jumlah Tiket</label>
                         <div class="d-flex gap-3 mt-2">
                             <div class="icon" id="min" onclick="min()">
                                 <i class="fa-solid fa-minus"></i>
                             </div>
-                            <input type="text"   name="qty" id="qty" readonly value="1" style="color: black; border:none; width: 20px;">
+                            <input type="text" required   name="qty" id="qty" readonly value="1" style="color: black; border:none; width: 20px;">
                             <div class="icon" id="plus" onclick="plus()">                                        
                                 <i class="fa-solid fa-plus"></i>
                             </div>
                         </div>
                     </div>
                     <div class="text-center">
-                        <a href="/checkout" style="padding-inline: 40px" class="btn btn-primary">Booking</a>
+                        <button type="submit" style="padding-inline: 40px" class="btn btn-primary">Booking</button>
                     </div>
                   </form>
                 </div>

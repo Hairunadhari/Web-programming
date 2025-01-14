@@ -60,7 +60,7 @@ header{
     font-size: 64px;
     margin: 0px;
 }
-#content2{
+#tour{
     width: 100%;
     background-color: #F8F8FC;
     display: flex;
@@ -79,7 +79,7 @@ header{
     padding-top: 50px;
     padding-bottom: 100px;
 }
-#content2 .page-heading{
+#tour .page-heading{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -96,15 +96,15 @@ header{
     color: #B4B4BD;
 line-height: 30px;
 }
-#content2 .page-heading p{
+#tour .page-heading p{
     width: 500px;
     color: #B4B4BD;
 line-height: 30px;
 }
-#content2 .isi{
+#tour .isi{
     width: 80%;
 }
-#content2 .candi .con{
+#tour .candi .con{
     display: flex;
     margin-bottom: 1rem;
     gap: 1rem;
@@ -114,37 +114,37 @@ line-height: 30px;
     justify-content: center;
     gap: 2rem;
 }
-#content2 .candi .gambar1,
-#content2 .candi .gambar2, 
-#content2 .candi .gambar3, 
-#content2 .candi .gambar4{
+#tour .candi .gambar1,
+#tour .candi .gambar2, 
+#tour .candi .gambar3, 
+#tour .candi .gambar4{
     height: 350px;
     width: 100%;
     background-size: cover;
     position: relative;
     border-radius: 20px;
 }
-#content2 .candi .texts:hover{
+#tour .candi .texts:hover{
     border: 2px solid white;
     transform: scale(0.9);
     transition: all 0.1s linear;
 }
-#content2 .candi .gambar1{
+#tour .candi .gambar1{
     background-image: url('/assets-landingpage/img/3.jpg');
 }
-#content2 .candi .gambar2{
+#tour .candi .gambar2{
     background-image: url('/assets-landingpage/img/4.jpg');
     width: 600px;
 }
-#content2 .candi .gambar3{
+#tour .candi .gambar3{
     width: 600px;
     background-image: url('/assets-landingpage/img/5.jpg');
 }
-#content2 .candi .gambar4{
+#tour .candi .gambar4{
     background-image: url('/assets-landingpage/img/1.jpg');
 }
 
-#howitworks .gambar1{
+#services .gambar1{
     background-image: url('/assets-landingpage/img/1.jpg');
     height: 600px;
     width: 500px;
@@ -152,7 +152,7 @@ line-height: 30px;
     position: relative;
     border-radius: 20px;
 }
-#howitworks{
+#services{
     width: 100%;
     background-color: #F8F8FC;
     display: flex;
@@ -160,18 +160,18 @@ line-height: 30px;
     padding-bottom: 100px;
 
 }
-#howitworks .isi{
+#services .isi{
     width: 80%;
     display: flex;
     justify-content: space-between;
 
 }
 
-#content2 .candi .texts{
+#tour .candi .texts{
     
     height: 100%;
 }
-#content2 .candi .text{
+#tour .candi .text{
     color: #ffffff;
     padding-left: 20px;
     position: absolute;
@@ -179,7 +179,7 @@ line-height: 30px;
     width: 100%;
     margin-bottom: 20px;
 }
-#content2 .candi p{
+#tour .candi p{
     letter-spacing: 2px;
 }
 #tourpackages .atraksi .gambar1,

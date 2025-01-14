@@ -139,11 +139,11 @@ option{
                 </a>
             </h2>
             <div class="menu">
-                <a href="/#" class="list">Home</a>
-                <a href="/#" class="list">Services</a>
-                <a href="/#" class="list">Tour</a>
-                <a href="/#" class="list">About</a>
-                <a href="/#" class="list">Contact</a>
+                <a href="/#home" class="list">Home</a>
+                <a href="/#tour" class="list">Tour</a>
+                <a href="/#services" class="list">Services</a>
+                <a href="/#tourpackages" class="list">Tour Package</a>
+                <a href="/#blog" class="list">Blog</a>
                 <a href="/destinations" class="list">Destinations</a>
             </div>
             <a class="sign" href="/login">

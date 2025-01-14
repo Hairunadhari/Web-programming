@@ -26,10 +26,11 @@ use App\Http\Controllers\TransactionController;
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/register', [AuthController::class, 'register']);
 Route::get('/login', [AuthController::class, 'login']);
-Route::get('/booking', [DestinationController::class, 'booking']);
+Route::get('/booking/{id}', [DestinationController::class, 'booking']);
 Route::get('/destinations', [DestinationController::class, 'index_user']);
-Route::get('/checkout', [CheckoutController::class, 'index']);
-Route::get('/checkout-sukses', [CheckoutController::class, 'sukses']);
+Route::post('/checkout', [CheckoutController::class, 'index']);
+Route::post('/checkout/submit', [CheckoutController::class, 'submit']);
+Route::get('/checkout-success', [CheckoutController::class, 'sukses']);
 // Route::post('/destinations/search', [DestinationController::class, 'search']);
 
 Route::prefix('admin')->group(function () {
@@ -41,8 +42,10 @@ Route::prefix('admin')->group(function () {
     Route::delete('/destinations/delete/{id}', [DestinationController::class, 'delete']);
     
     Route::get('/transactions', [TransactionController::class, 'index']);
-    Route::get('/transactions/detail', [TransactionController::class, 'detail']);
+    Route::get('/transactions/detail/{id}', [TransactionController::class, 'detail']);
     Route::get('/users', [UserController::class, 'index']);
-    Route::get('/users/detail', [UserController::class, 'detail']);
+    Route::post('/users/submit', [UserController::class, 'submit']);
+    Route::put('/users/update/{id}', [UserController::class, 'update']);
+    Route::delete('/users/delete/{id}', [UserController::class, 'delete']);
 
 });

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>TRAVEL</title>
+    <title>INDOTRAVI</title>
   
     <!-- General CSS Files -->
     <link rel="stylesheet" href={{asset('/assets/modules/bootstrap/css/bootstrap.min.css')}}>
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href={{asset('/assets/modules/summernote/summernote-bs4.css')}}>
     <link rel="stylesheet" href={{asset('/assets/modules/owlcarousel2/dist/assets/owl.carousel.min.css')}}>
     <link rel="stylesheet" href={{asset('/assets/modules/owlcarousel2/dist/assets/owl.theme.default.min.css')}}>
-    <link rel="stylesheet" href="{{ asset('assets/modules/datatables/datatables.min.css')}}">
+    {{-- <link rel="stylesheet" href="{{ asset('assets/modules/datatables/datatables.min.css')}}"> --}}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="{{ asset('assets/modules/izitoast/css/iziToast.min.css')}}">
@@ -24,7 +24,6 @@
     <link rel="stylesheet" href={{asset('/assets/css/components.css')}}>
 
 </head>
-
 <body>
   <div id="app">
     <div class="main-wrapper main-wrapper-1">
@@ -60,7 +59,7 @@
  <script src={{asset('assets/modules/owlcarousel2/dist/owl.carousel.min.js')}}></script>
  <script src={{asset('assets/modules/summernote/summernote-bs4.js')}}></script>
  <script src={{asset('assets/modules/chocolat/dist/js/jquery.chocolat.min.js')}}></script>
- <script src="{{ asset('assets/modules/datatables/datatables.min.js')}}"></script>
+ {{-- <script src="{{ asset('assets/modules/datatables/datatables.min.js')}}"></script> --}}
  <script src="{{ asset('assets/modules/izitoast/js/iziToast.min.js')}}"></script>
 
  <!-- Page Specific JS File -->

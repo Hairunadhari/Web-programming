@@ -13,32 +13,41 @@
             <form action="#" method="post" enctype="multipart/form-data">
                 <div class="form-group">
                     <label>Nama Pemesan </label>
-                    <input type="text" readonly value="Irwansyah Saputra" class="form-control" name="nama_kota">
-                </div>
-                <div class="form-group">
-                    <label>Email Pemesan </label>
-                    <input type="text" readonly value="IrwansyahSaputra@gmail.com" class="form-control" name="nama_kota">
-                </div>
-                <div class="form-group">
-                    <label>No Telp Pemesan </label>
-                    <input type="text" readonly value="081812718271" class="form-control" name="nama_kota">
-                </div>
-                <div class="form-group">
-                    <label>Total Harga </label>
-                    <input type="text" readonly value="Rp 150.000" class="form-control" name="harga">
-                </div>
-                <div class="form-group">
-                    <label>Status Pembayaran </label>
-                    <input type="text" readonly value="PAID" class="form-control" name="harga">
-                </div>
-                <div class="form-group">
-                    <label>Tanggal Keberangkatan </label>
-                    <input type="date" readonly value="05-10-2024" class="form-control" name="harga">
+                    <input type="text" readonly value="{{$data->nama_pemesan}}" class="form-control" name="nama_kota">
                 </div>
                 <div class="form-group">
                     <label>Kota Tujuan </label>
-                    <input type="text" readonly value="Kerinci" class="form-control" name="harga">
+                    <input type="text" readonly value="{{$data->kota_tujuan}}" class="form-control" name="harga">
                 </div>
+                <div class="form-group">
+                    <label>Email Pemesan </label>
+                    <input type="text" readonly value="{{$data->email_pemesan}}" class="form-control" name="nama_kota">
+                </div>
+                <div class="form-group">
+                    <label>No Telp Pemesan </label>
+                    <input type="text" readonly value="0{{$data->no_telp_pemesan}}" class="form-control" name="nama_kota">
+                </div>
+                <div class="form-group">
+                    <label>Total Harga </label>
+                    <input type="text" readonly value="{{number_format($data->total_harga, 0, ',', '.')}}" class="form-control" name="harga">
+                </div>
+                <div class="form-group">
+                    <label>Status Pembayaran </label>
+                    <input type="text" readonly value="{{$data->status_pembayaran}}" class="form-control " name="harga">
+                </div>
+                <div class="form-group">
+                    <label>Jumlah Tiket </label>
+                    <input type="text" readonly value="{{$data->jumlah_tiket}}" class="form-control" name="harga">
+                </div>
+                <div class="form-group">
+                    <label>Metode Pembayaran </label>
+                    <input type="text" readonly value="{{$data->metode_bayar}}" class="form-control" name="harga">
+                </div>
+                <div class="form-group">
+                    <label>Tanggal Keberangkatan </label>
+                    <input type="datetime" readonly value="{{ date('d F Y', strtotime($data->tanggal_keberangkatan)) }}" class="form-control" name="harga">
+                </div>
+               
                
             </form>
         </div>

@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="{{asset('assets-landingpage/css/home.css')}}">
 
 
-<section id="content2">
+<section id="tour">
     <div class="isi">
         <p style="color: #B4B4BD">Best Location</p>
         <div class="page-heading">
@@ -60,7 +60,7 @@
 
     </div>
 </section>
-<section id="howitworks">
+<section id="services">
     <div class="isi">
         <div class="gambar1">
             <div class="texts">
@@ -152,7 +152,6 @@
             </div>
             <div class="gambar2">
                 <div class="texts">
-
                     <div class="text">
                         <p>Java Tour Package</p>
                     </div>
@@ -170,28 +169,28 @@
     </div>
 
 </section>
-<section id="ourblog" class="d-flex justify-content-center pt-5" style="background-color: #F8F8FC">
+<section id="blog" class="d-flex justify-content-center pt-5" style="background-color: #F8F8FC">
     <div class="isi mb-5" style="width: 80%">
         <h4 class="text-center" style="color: #B4B4BD">Our Blog</h4>
         <h1 class="text-center mb-5">Our travel memories</h1>
         <div class="d-flex justify-content-center gap-3">
-            <div class="card" style="width: 50%; height: 600px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+            <div class="card" style="width: 50%; height: 500px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
                 <img src="{{asset('assets-landingpage/img/7.jpg')}}" class="card-img-top h-50" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title" style="color: #B4B4BD">Nov 14, 2024</h5>
-                    <h3 class="card-title">2024 Travel Trends - what you need to know</h3>
-                    <p class="card-title fs-5" style="color: #B4B4BD">
+                    <h6 class="card-title" style="color: #B4B4BD">Nov 14, 2024</h6>
+                    <h4 class="card-title">2024 Travel Trends - what you need to know</h4>
+                    <p class="card-title fs-6" style="color: #B4B4BD">
                         Traveling allows you to escape routine, discover hidden gems, embrace different traditions,
                         taste unique cuisines, connect with nature, gain fresh perspectives, and return home with
                         stories that last a lifetime.</p>
                 </div>
             </div>
-            <div class="card" style="width: 50%; height: 600px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+            <div class="card" style="width: 50%; height: 500px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
                 <img src="{{asset('assets-landingpage/img/8.jpg')}}" class="card-img-top h-50" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title" style="color: #B4B4BD">Nov 14, 2024</h5>
-                    <h3 class="card-title">2024 Travel Trends - what you need to know</h3>
-                    <p class="card-title fs-5" style="color: #B4B4BD">Traveling opens the door to unforgettable
+                    <h6 class="card-title" style="color: #B4B4BD">Nov 14, 2024</h6>
+                    <h4 class="card-title">2024 Travel Trends - what you need to know</h4>
+                    <p class="card-title fs-6" style="color: #B4B4BD">Traveling opens the door to unforgettable
                         experiences, exploring new cultures, meeting diverse people, enjoying breathtaking
                         landscapes, and creating cherished memories that inspire personal growth and broaden your
                         perspective on life.</p>

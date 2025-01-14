@@ -77,7 +77,7 @@
                     <div class="">
                         <div class="message-box _success card">
                             <i class="fa fa-check-circle" aria-hidden="true"></i>
-                            <h2> Your payment was successful </h2>
+                            <h2> Pembayaran Anda berhasil </h2>
                             <div class="d-flex justify-content-center p-3">
                             <div>
                                     <img src="https://th.bing.com/th/id/R.7d32af55731422b6f24d40025c015e0b?rik=qYdE%2bEO%2fRbmmuw&riu=http%3a%2f%2f2.bp.blogspot.com%2f-qToihft8kR0%2fVFdAi8tHSvI%2fAAAAAAAAAJg%2ffSKgqQyB7tw%2fs1600%2fqrcode.png&ehk=Zkk6LUAHOWIlyBYxNDmmJZcWsRKUc3aN7lSPhYyY8c0%3d&risl=&pid=ImgRaw&r=0" class="mb-3" alt=""><br>
@@ -85,8 +85,9 @@
                                     <div class="btn btn-danger" style="width: max-content">Download</div>
                                 </div>
                             </div>
-                                <p> Thank you for your payment. we will <br>
-                                    be in contact with more details shortly </p>
+                                <p> Terima kasih atas pembayaran Anda. <br>
+                                    Kami akan
+segera hubungi detail lebih lanjut </p>
                         </div>
                     </div>
                 </div>

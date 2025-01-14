@@ -9,8 +9,14 @@ use Illuminate\Support\Facades\Validator;
 
 class DestinationController extends Controller
 {
-    public function index(){
-            $datas = Destination::all();
+    public function index(Request $request){
+        // dd($request->search);
+        if (!empty($request->search)) {
+            $datas = Destination::where('nama_kota', 'like', '%' . $request->search . '%')->latest()->paginate(5);
+        }else{
+
+            $datas = Destination::latest()->paginate(5);
+        }
         return view('admin-page.destinations.destination',compact('datas'));
     }
 
@@ -120,8 +126,9 @@ class DestinationController extends Controller
 
     }
 
-    public function booking(){
-        return view('landing-page.booking');
+    public function booking($id){
+        $data = Destination::find($id);
+        return view('landing-page.booking',compact('data'));
     }
 
 

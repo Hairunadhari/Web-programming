@@ -58,9 +58,9 @@
                     <h5 class="card-title">Description</h5>
                     <p class="card-text">{{$item->description}}</p>
                     <div class="price">
-                      <p class="card-text"><i class="fa-solid fa-tag"></i> Rp {{ number_format($item->harga, 0, ',', '.') }} <small>/pax</small> </p>
+                      <p class="card-text"><i class="fa-solid fa-tag"></i> Rp {{ number_format($item->harga, 0, ',', '.') }} <small>/orang</small> </p>
                     </div>
-                    <a href="/booking" class="btn w-100 text-white mt-3 fw-bold" style="background-color: #01AAA7; border-radius: 20px">Book Now</a>
+                    <a href="/booking/{{$item->id}}" class="btn w-100 text-white mt-3 fw-bold" style="background-color: #01AAA7; border-radius: 20px">Book Now</a>
                 </div>
              
             </div>

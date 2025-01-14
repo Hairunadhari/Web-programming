@@ -1,38 +1,35 @@
 @extends('admin-page.layouts.app')
 @section('content')
+<link rel="stylesheet" href="{{ asset('library/datatables/media/css/jquery.dataTables.min.css') }}">
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.3.2/css/buttons.dataTables.min.css">
+
 <div class="section-header">
     <h1 class="w-100">Destination</h1>
     {{-- <h4 class="w-100">Table Destination</h4> --}}
-    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#create">
-        <span class="text">+ Create New</span>
-    </button>
+    
 </div>
 <div class="section-body">
-    <h2 class="section-title">Destination</h2>
-    <p class="section-lead">
-        Menu 'Destination' digunakan untuk mengatur data yg ada di halaman user
-    </p>
+  
 
     <div class="row">
         <div class="col-12">
             <div class="card">
-                <div class="card-header">
-                    <h4>Table Destination</h4>
+                <div class="card-header d-flex justify-content-between">
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#create">
+                        <span class="text">+ Create New</span>
+                    </button>
                  
                     <div class="card-header-form">
-                      <form>
+                      <form id="filter" action="/admin/destinations" method="GET">
                         <div class="input-group">
-                          <input type="text" class="form-control" placeholder="Search">
-                          <div class="input-group-btn">
-                            <button class="btn btn-info"><i class="fas fa-search"></i></button>
-                          </div>
+                          <input type="text" class="form-control" id="search" name="search" value="" placeholder="Search">
                         </div>
                       </form>
                     </div>
                   </div>
                 <div class="card-body p-0">
                     <div class="table-responsive">
-                      <table class="table table-striped table-md">
+                      <table class="table table-striped table-md" id="table-z">
                         <tbody>
                             <tr>
                           <th>No</th>
@@ -43,23 +40,21 @@
                           <th>No Telp Outlet</th>
                           <th>Opsi</th>
                         </tr>
-                        @php
-                        $no =1;
-                        @endphp
+                        
                         @foreach($datas as $data)
                         <tr>
-                            <td>{{$no++}}</td>
+                            <td>{{ $datas->firstItem() + $loop->index }}</td>
                             <td >{{$data->nama_kota}}</td>
                             <td>{{$data->description}}</td>
                             <td>
                                 <img src="/storage/image/{{$data->image}}"
                                     style="max-width: 15vw; box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 2px; margin:5px; padding:0.25rem; border:1px solid #dee2e6; ">
                             </td>
-                            <td>{{$data->harga}}</td>
+                            <td>Rp {{number_format($data->harga, 0, ',', '.')}}</td>
                             <td>0{{$data->no_telp_outlet}}</td>
                             <td>
                                 <form action="/admin/destinations/delete/{{$data->id}}" method="POST"
-                                    onsubmit="return confirm('mau ngapus?');">
+                                    onsubmit="return confirm('yakin mau hapus?');">
                                     <span><a class="btn btn-warning"
                                             href="/admin/destinations/edit/{{$data->id}}"><i
                                                 class="far fa-edit"></i>Edit</a></span>
@@ -74,12 +69,32 @@
                       </tbody>
                     </table>
                     </div>
+                    <div class="float-right">
+                        {{ $datas->links('pagination::bootstrap-4') }}
+                      </div>
                   </div>
             </div>
         </div>
     </div>
 
 </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById('search').addEventListener('input', function() {
+            document.getElementById('filter').submit();
+        });
+    });
+const urlParams = new URLSearchParams(window.location.search);
+const searchQuery = urlParams.get('search');
+
+document.addEventListener("DOMContentLoaded", function() {
+    const searchInput = document.getElementById('search');
+
+    if (searchQuery) {
+        searchInput.value = searchQuery;
+    }
+});
+</script>
 @endsection
 @section('modal')
 <!-- Modal -->
@@ -124,4 +139,5 @@
         </div>
     </div>
 </div>
+
 @endsection
